@@ -13,5 +13,5 @@ setup(
             'math-quiz=math_quiz.math_quiz:math_quiz',
         ],
     },
-    
+      
 )
