@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'math-quiz=math_quiz.quiz:math_quiz',
+            'math-quiz=math_quiz.math_quiz:math_quiz',
         ],
     },
     
