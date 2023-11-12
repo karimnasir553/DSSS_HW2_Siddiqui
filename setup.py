@@ -1,12 +1,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='math_quiz_game',
+    name='math-quiz-game',
     version='1.0.0',
     packages=find_packages(),
     install_requires=[
-        
-        # Add any other Python packages your project depends on
+        # Add any dependencies here
     ],
     entry_points={
         'console_scripts': [
