@@ -20,9 +20,9 @@ class TestMathGame(unittest.TestCase):
 
     def test_perform_operation(self):
         test_cases = [
-            (5, 2, '+', '5 + 2', 7),
-            (10, 3, '-', '10 - 3', 7),
-            (4, 6, '*', '4 * 6', 24),
+            (5, 4, '+', '5 + 4', 9),
+            (12, 3, '-', '12 - 3', 9),
+            (5, 6, '*', '5 * 6', 30),
             # Add more test cases as needed
         ]
 
