@@ -5,7 +5,7 @@ setup(
     version='1.0.0',
     packages=find_packages(),
     install_requires=[
-        'python',
+        'python311',
         # Add any dependencies here
     ],
     entry_points={
