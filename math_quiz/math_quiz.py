@@ -20,15 +20,12 @@ def perform_operation(num1, num2, operator):
     Performs the specified arithmetic operation on two numbers.
     Returns a tuple containing the problem string and the correct answer.
     """
-    if operator == '+':
-        result = num1 + num2
-    elif operator == '-':
-        result = num1 - num2
-    else:
-        result = num1 * num2
+    if operator == '+': result = num1 + num2
+    elif operator == '-': result = num1 - num2
+    else: result = num1 * num2
 
-    problem_string = f"{num1} {operator} {num2}"
-    return problem_string, result
+    problem = f"{num1} {operator} {num2}"
+    return problem, result
 
 
 def math_quiz():
