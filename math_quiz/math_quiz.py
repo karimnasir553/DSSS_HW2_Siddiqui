@@ -1,8 +1,7 @@
 # math_quiz/quiz.py
 import random
 
-
-def generate_random_integer(min_value, max_value):
+def generate_integers(min_value, max_value):
     """
     Generates a random integer within the given range.
     """
@@ -16,16 +15,16 @@ def generate_random_operator():
     return random.choice(['+', '-', '*'])
 
 
-def perform_operation(num1, num2, operator):
+def execute_operation(num1, num2, operator):
     """
     Performs the specified arithmetic operation on two numbers.
     Returns a tuple containing the problem string and the correct answer.
     """
+    
+    problem = f"{num1} {operator} {num2}"
     if operator == '+': result = num1 + num2
     elif operator == '-': result = num1 - num2
     else: result = num1 * num2
-
-    problem = f"{num1} {operator} {num2}"
     return problem, result
 
 
@@ -40,11 +39,11 @@ def math_quiz():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for _ in range(total_questions):
-        num1 = generate_random_integer(1, 10)
-        num2 = generate_random_integer(1, 5)
+        num1 = generate_integers(1, 10)
+        num2 = generate_integers(1, 5)
         operator = generate_random_operator()
 
-        problem, answer = perform_operation(num1, num2, operator)
+        problem, answer = execute_operation(num1, num2, operator)
         print(f"\nQuestion: {problem}")
         
         try:
